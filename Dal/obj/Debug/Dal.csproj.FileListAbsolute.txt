@@ -1,0 +1,15 @@
+E:\Projetos\CopaMundivox\CopaMundivox\Dal\bin\Debug\Dal.dll
+E:\Projetos\CopaMundivox\CopaMundivox\Dal\bin\Debug\Dal.pdb
+E:\Projetos\CopaMundivox\CopaMundivox\Dal\obj\Debug\Dal.csprojAssemblyReference.cache
+E:\Projetos\CopaMundivox\CopaMundivox\Dal\obj\Debug\Dal.csproj.CoreCompileInputs.cache
+E:\Projetos\CopaMundivox\CopaMundivox\Dal\obj\Debug\Dal.dll
+E:\Projetos\CopaMundivox\CopaMundivox\Dal\obj\Debug\Dal.pdb
+E:\Projetos\CopaMundivox\CopaMundivox\Dal\bin\Debug\Dal.dll.config
+E:\Projetos\CopaMundivox\CopaMundivox\Dal\bin\Debug\Entities.dll
+E:\Projetos\CopaMundivox\CopaMundivox\Dal\bin\Debug\EntityFramework.dll
+E:\Projetos\CopaMundivox\CopaMundivox\Dal\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projetos\CopaMundivox\CopaMundivox\Dal\bin\Debug\Entities.pdb
+E:\Projetos\CopaMundivox\CopaMundivox\Dal\bin\Debug\Entities.dll.config
+E:\Projetos\CopaMundivox\CopaMundivox\Dal\bin\Debug\EntityFramework.xml
+E:\Projetos\CopaMundivox\CopaMundivox\Dal\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projetos\CopaMundivox\CopaMundivox\Dal\obj\Debug\Dal.csproj.CopyComplete

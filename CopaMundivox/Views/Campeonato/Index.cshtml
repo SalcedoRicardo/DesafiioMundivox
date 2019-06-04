@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Entities.tb_Time>
+
+@{
+    ViewBag.Title = "Campeonato";
+
+}
+<h2>Campeonato Muldivox</h2>
+
+@{
+    Random rndm = new Random();
+
+    string[] listaTimes = new string[8];
+    string[] listaTimeRandom = new string[8];
+    int x = 0;
+    Random rnd = new Random();
+    foreach (var item in Model)
+    {
+        if(x > 7)
+        {
+            break;
+        }
+
+        listaTimes[x] = item.nmTime;
+        x++;
+    }
+
+    for (int i = 0; i < listaTimes.Count(); i++)
+    {
+
+    }
+    }
+
+
+
+    <table>
+        <tr>
+            <th>Tabela</th>
+
+        </tr>
+
+        <tr><td class="time ev1">@listaTimes[0]</td> <td>@Html.TextBox("rtime1", "", new { @class= "resultado txt-ev1" }) </td> <td> X  </td> <td> @Html.TextBox("rtime1", "", new { @class = "resultado txt-ev1" }) </td> <td class="time ev1">@listaTimes[1]</td></tr>
+        <tr><td></td> <td></td> <td></td> <td></td> <td ></td> <td></td> <td></td> <td id="vencedor1-t1" class="ev6">Vencedor1</td> <td>@Html.TextBox("rtime1", "", new { @class = "resultado txt-ev6" })</td> <td> X </td> <td>@Html.TextBox("rtime1", "", new { @class = "resultado txt-ev6" }) </td> <td class="ev6" id="vencedor2-t2">Vencedor2</td> </tr>
+        <tr><td class="time ev2">@listaTimes[2]</td> <td>@Html.TextBox("rtime1", "", new { @class = "resultado txt-ev2" })</td> <td> X </td> <td>@Html.TextBox("rtime1", "", new { @class = "resultado txt-ev2" }) </td> <td class="time ev2">@listaTimes[3]</td> </tr>
+        <tr><td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td id="vencedor6-t6">Vencedor1</td> <td>@Html.TextBox("rtime1", "", new { @class = "resultado", @id= "txtfin1" }) </td> <td> X </td> <td>@Html.TextBox("rtime1", "", new { @class = "resultado", @id= "txtfin2" }) </td> <td id="vencedor7-t7">Vencedor2</td> </tr>
+        <tr><td class="time ev3">@listaTimes[4]</td> <td>@Html.TextBox("rtime1", "", new { @class = "resultado txt-ev3" })</td> <td> X </td> <td>@Html.TextBox("rtime1", "", new { @class = "resultado txt-ev3" }) </td> <td class="time ev3">@listaTimes[5]</td> </tr>
+        <tr><td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td id="vencedor3-t3" class="ev7">Vencedor3</td><td>@Html.TextBox("rtime1", "", new { @class = "resultado txt-ev7" }) </td> <td> X </td> <td>@Html.TextBox("rtime1", "", new { @class = "resultado txt-ev7" }) </td> <td class="ev7" id="vencedor4-t4">Vencedor4</td> </tr>
+        <tr><td class="time ev4">@listaTimes[6]</td> <td>@Html.TextBox("rtime1", "", new { @class = "resultado txt-ev4" })</td> <td> X </td> <td>@Html.TextBox("rtime1", "", new { @class = "resultado txt-ev4" }) </td> <td class="time ev4">@listaTimes[7]</td> </tr>
+    </table>
+<br />
+    <p>
+        <a class="btn btn-success" id="btnAtualizar">Atualizar Tabela &raquo;</a>
+        @Html.ActionLink("Novo Torneio", "Index", "Campeonato", null, new { @class = "btn btn-success" })
+    </p>
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/Bundles/campeonato")

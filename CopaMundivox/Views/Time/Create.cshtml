@@ -1,0 +1,19 @@
+﻿@model CopaMundivox.Models.Time
+
+@{
+    ViewBag.Title = "Cadastrar time";
+}
+
+<h3>Cadastro de Time</h3>
+
+@using (Html.BeginForm("Create", "Time", FormMethod.Post))
+{
+    @Html.LabelFor(d => d.nmTime)<br />
+    @Html.TextBoxFor(d => d.nmTime)
+    <button type="submit">Enviar Time</button>
+}
+
+
+
+
+

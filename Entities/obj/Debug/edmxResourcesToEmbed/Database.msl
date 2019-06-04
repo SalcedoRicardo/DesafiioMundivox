@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="COPAMULDIVOXModelStoreContainer" CdmEntityContainer="COPAMULDIVOXEntities">
+    <EntitySetMapping Name="tb_Time">
+      <EntityTypeMapping TypeName="COPAMULDIVOXModel.tb_Time">
+        <MappingFragment StoreEntitySet="tb_Time">
+          <ScalarProperty Name="idTime" ColumnName="idTime" />
+          <ScalarProperty Name="nmTime" ColumnName="nmTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

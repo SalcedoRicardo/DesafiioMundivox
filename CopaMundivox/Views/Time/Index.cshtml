@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Entities.tb_Time>
+@using GridMvc.Html
+
+
+@{
+    ViewBag.Title = "Lista de Times";
+}
+
+<h3>Listagem de times</h3>
+<br />
+@Html.Grid(Model).Columns(columns =>
+{
+    columns.Add(t => t.idTime).Titled("Código").SetWidth(110);
+    columns.Add(t => t.nmTime).Titled("Nome do Time").Sortable(true);
+    columns.Add().Titled("Option").Encoded(false)
+                 .Sanitized(false)
+                 .SetWidth("30%")
+                 .RenderValueAs(o => (
+                 Html.ActionLink("Remover", "DeleteTime", new { id = o.idTime }, new { @class = "btn btn-default" })
+                        )
+);
+}).WithPaging(20)
+
+<p><a class="btn btn-default" href="~/Time/Create">Cadastrar Time &raquo;</a></p>
+
+
+
